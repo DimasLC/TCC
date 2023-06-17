@@ -1,0 +1,130 @@
+.pai-cards {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 254px;
+  background: rgb(238, 238, 238);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 24px;
+  font-weight: 900;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #222;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.second-content-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.second-content span {
+  font-size: 20px;
+  text-align: center;
+}
+
+.second-content-texto>p {
+  margin: 0 1rem;
+  color: #494848;
+  font-size: 14px;
+}
+
+.second-content-botao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second-content-botao button {
+  background-color: rgb(123, 151, 151);
+  border-radius: 2px;
+  padding: 8px;
+  border: none;
+}
+
+.second-content-botao p {
+  font-size: 14px;
+}
+
+.second-content a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+.first-content img {
+  width: 100%;
+}
+
+.first-content h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(47, 46, 46);
+  text-align: center;
+}
+
+.first-content span {
+  color: black;
+}
